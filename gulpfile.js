@@ -139,7 +139,7 @@ exports.refresh = refresh;
 // Watcher
 
 const watcher = () => {
-    gulp.watch("source/sass/**/*.sass", gulp.series(styles));
+    gulp.watch("source/sass/**/*.{scss,sass}", gulp.series(styles));
     gulp.watch("source/*.html", gulp.series(html, refresh));
 };
 
